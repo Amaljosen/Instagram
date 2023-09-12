@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="instagram.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Marcellus+SC&family=Poppins:wght@300&family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            overflow: hidden;
+            
+        }
+        .body{
+            height: 92vh;
+            width: 300px;
+            margin:10px auto 30px auto;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: scroll; 
+        }
+        @media screen and (max-width:600px) {
+            .body{
+                height: 80vh;
+                margin:30px auto 30px auto;
+            }
+            
+        }
+       ::-webkit-scrollbar{
+        display: none;
+       }
+        .notification{
+            display: flex;
+            padding:2px 5px 2px 5px;
+        }
+        .notify-h2{
+            font-size: 15px;
+            padding:3px 7px 3px 7px;
+        }
+        .filter{
+            font-size: 15px;
+            color: blue;
+            float: right;
+            padding:7px 7px 7px 15px;
+            cursor: pointer;
+        }
+        .profile-img{
+            width: 25px;
+            height:25px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        .btn{
+            background-color: blue;
+            color: white;
+            padding: 5px 12px 5px 12px;
+            border-radius: 6px;
+            border: none;
+            font-weight: bold;
+            margin-left: 20px;
+            cursor: pointer;
+
+        }
+        .btnn{
+            background-color: rgb(35, 33, 33);
+            color: rgb(255, 255, 255);
+            padding: 5px 12px 5px 12px;
+            border-radius: 6px;
+            border: none;
+            font-weight: bold;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .div-1{
+            display: flex;
+            padding: 5px;
+        }
+
+        footer{
+            background-color: black;
+            display: flex; 
+            justify-content: space-between;
+            padding:12px 7px 7px 7px;
+            position: sticky;
+            bottom: -10px;
+            z-index: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="body">
+
+        <p class="filter">Filter</p>
+
+        <nav class="nav-1">
+            <div class="notification">
+            <a href="index.html"><img src="back.png" alt="" width="20px" height="20px" style="padding:2px 5px 5px 5px;"></a>
+            <h2 class="notify-h2">Notifications</h2>
+        </div>
+           
+        </nav>
+
+
+        <nav class="nav-2">
+
+            <img src="check-mark.png" alt="" style="float: left;width: 30px;padding:5px 10px 0px 5px;">
+            <p style="font-size: 10px;padding:10px 7px 0 5px;">You're ll caught up</p>
+            <p style="font-size: 10px;color: blue;">see new activity for explore_world_</p>
+
+        </nav>
+
+        <div class="yesterday" style="margin-top: 20px;">
+         
+            <h2 style="font-size: 12px;padding: 5px;">Yesterday</h2>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?boy"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <p style="font-size: 10px;padding-left: 10px;">Your contact chandran is on Instagram as chandran-107.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">17h</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?girl"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">cute_girl_0065</h3>
+                <p style="font-size: 10px;padding-left: 5px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">19h</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?girls"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">chalista_giolagica_18</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">20h</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="7-days" style="margin-top: 20px;">
+         
+            <h2 style="font-size: 12px;padding: 5px;">Last 7 Days</h2>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?boys"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">dj_beat_official,</h3>
+                <p style="font-size: 10px;padding-left: 10px;">who you might know, is on Instgram</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">1d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?men"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">martin_jary_0065</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">2d</p>
+            </div>
+            <div>
+                <button class="btnn">Following</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div style="position: relative;">
+                <img src="http://source.unsplash.com/1000x1000/?womens"alt="" class="profile-img" style="z-index: 1;">
+                <img src="http://source.unsplash.com/1000x1000/?style-girl"alt="" class="profile-img" 
+                style="position: absolute;left: 8px;border: 1px solid black;top: 8px;">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">alista_lagica_</h3>
+                <p style="font-size: 10px;padding-left: 10px;">and 325 others liked your photo..</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">2d</p>
+            </div>
+            <div>
+                <img src="WhatsApp Image 2023-07-21 at 7.50.21 PM.jpeg" alt="" width="35px" style="padding-left: 35px;">
+            </div>
+            </div>
+
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?boyss"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">dj_beat_official,</h3>
+                <p style="font-size: 10px;padding-left: 10px;">who you might know, is on Instgram</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">3d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?mens"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">martin_jary_0065</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">3d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?woman"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">alista_lagica_</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">4d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?boys"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">dj_beat_official,</h3>
+                <p style="font-size: 10px;padding-left: 10px;">who you might know, is on Instgram</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">4d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?men"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">martin_jary_0065</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">3d</p>
+            </div>
+            <div>
+                <button class="btnn">Following</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?womans"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">alista_lagica_</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">5d</p>
+            </div>
+            <div>
+                <button class="btnn">Following</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?guys"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">dj_beat_official,</h3>
+                <p style="font-size: 10px;padding-left: 10px;">who you might know, is on Instgram</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">5d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?man"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">martin_jary_0065</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">6d</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div style="position: relative;">
+                <img src="http://source.unsplash.com/1000x1000/?modern-men"alt="" class="profile-img" style="z-index: 1;">
+                <img src="http://source.unsplash.com/1000x1000/?modern-girl"alt="" class="profile-img" 
+                style="position: absolute;left: 8px;border: 1px solid black;top: 8px;">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">_hinchan_and _cilocola-46-</h3>
+                <p style="font-size: 10px;padding-left: 10px;">and 322 others liked your photo.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">7d</p>
+            </div>
+            <div>
+                <img src="WhatsApp Image 2023-07-21 at 7.50.22 PM.jpeg" alt="" width="35px" style="padding-left: 35px;">
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?indian-girl"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">morila-sowndaraj</h3>
+                <p style="font-size: 10px;padding-left: 5px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">6d</p>
+            </div>
+            <div>
+                <button class="btnn">Following</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?smile-girl"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <p style="font-size: 10px;padding-left: 10px;">Your contact lisa is on Instagram as beauty-queen.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">17h</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?girl-outfit"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">modern_girl_0065</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">19h</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+
+            <div class="div-1">
+                <div>
+                <img src="http://source.unsplash.com/1000x1000/?beautiful-women"alt="" class="profile-img">
+            </div>
+            <div style="width: 175px;display: flex;flex-wrap: wrap;">
+                <h3 style="font-size: 10px;padding-left: 10px;">niolagica_2708</h3>
+                <p style="font-size: 10px;padding-left: 10px;">started following you.</p>
+                <p style="font-size: 10px; color: grey;padding-left: 10px;">20h</p>
+            </div>
+            <div>
+                <button class="btn">Follow</button>
+            </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <footer>
+            <a href="index.html"><img src="home.png" alt="" width="20px" height="20px"></a>
+            <a href="search.html"><img src="search lite.png" alt="" width="20px" height="20px"></a>
+            <img src="plus.png" alt="" width="20px" height="20px">
+            <a href="reels.html"><img src="video.png" alt="" width="20px" height="20px"></a>
+            <a href="profile.html"><img src="josen.jpeg" alt="" width="20px" height="20px" style="border-radius: 50%;"></a>
+        
+        </footer>
+    </div>
+</body>
+</html>

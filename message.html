@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="instagram.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Marcellus+SC&family=Poppins:wght@300&family=Satisfy&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            overflow: hidden;
+            
+        }
+        .body{
+            height: 92vh;
+            width: 300px;
+            margin:10px auto 30px auto;
+            background-color: black;
+            color: white;
+            border-radius: 30px;
+            padding: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            overflow: scroll; 
+        }
+        @media screen and (max-width:600px) {
+            .body{
+                height: 80vh;
+                margin:30px auto 30px auto;
+            }
+            
+        }
+       ::-webkit-scrollbar{
+        display: none;
+       }
+       .icons{
+            width: 100px;
+            font-size: 15px;
+            color: blue;
+            float: right;
+            padding:7px 7px 7px 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .notification{
+            display: flex;
+            padding:2px 5px 2px 5px;
+        }
+        .notify-h2{
+            font-size: 18px;
+            padding:1px 7px 3px 7px;
+        }
+        input{
+            width: 70%;
+            height: 15px;
+            background-color: rgb(42, 42, 42);
+            border-radius: 7px;
+            border: none;
+            padding:5px 5px 5px 28px;
+            margin: 5px;
+            
+        }
+        .filter{
+            font-size: 15px;
+            color: blue;
+            float: right;
+            cursor: pointer;
+        }
+        .box{
+            height: 35px;
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        button{
+            cursor: pointer;
+        }
+      
+        .primary{
+            padding:5px 9px 5px 9px;
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            border: none;
+            font-weight: bolder;
+            font-size: 12px;
+        }
+        .btn{
+            padding:5px 9px 5px 9px;
+            background-color: rgb(37, 37, 37);
+            color: white;
+            border-radius: 5px;
+            border: none;
+            font-weight: bolder;
+            font-size: 12px;
+
+        }
+        .chat{
+            display: flex;
+            height: 50px;
+            align-items: center; 
+        }
+        p{
+            font-size: 11px;
+            color: white;
+        }
+      
+
+
+       </style>
+
+</head>
+<body>
+    <div class="body">
+
+   
+        <div class="icons">
+            <img src="more.png" width="25px">
+            <img src="growth-chart.png" width="20px" height="20px">
+            <img src="writing.png" width="20px" height="20px">
+
+        </div>
+
+        <nav class="nav-1">
+            <div class="notification">
+            <a href="index.html"><img src="back.png" alt="" width="20px" height="20px" style="padding:5px"></a>
+            <h2 class="notify-h2">_Josen_</h2>
+        </div>
+           
+        </nav>
+   
+
+        <nav style="position: relative;height: 35px;width: 300px;display: flex;align-items: center;">
+            <img src="search dark.png" alt="" width="15px" 
+            style="position: absolute;left: 12px;top: 12px;">
+            <input type="text" placeholder="Search">
+            <p class="filter">Filter</p>
+
+        </nav>
+
+        <div class="box">
+            <div class="box-item">
+                <button class="primary">Primary</button>
+                <button class="btn">General</button>
+                <button class="btn">Channels</button>
+                <button class="btn">Requests</button>
+            </div>
+
+        </div>
+
+
+
+
+        <div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?girl" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Lisa Mary 💫 </p>
+            <p>2 new-messages . 1h</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?men" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Harry Hin </p>
+            <p>4 new-messages . 1h</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?woman" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">Violitika Princy ☘️💚 </p>
+            <p style="color: grey;font-size: 10px;">Send 2h ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?women" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">Monica Jessy 💖 </p>
+            <p style="color: grey;font-size: 10px;">Send 2h ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?beard-men" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">Rocky rex 🤙</p>
+            <p style="color: grey;font-size: 10px;">Send 2h ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?men-style" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Gideon Roy </p>
+            <p>3 new-messages . 3h</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?boy" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>The Kindy Heart </p>
+            <p>Send a reel by Noonse-heart . 3h</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?smile-girl" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Jassi Mola </p>
+            <p>Send a reel by koorins-karela . 3h</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?modern-girl" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Lara Vincy 💫 </p>
+            <p>2 new-messages . 4h</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?smile-men" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">Jack mex </p>
+            <p style="color: grey;font-size: 10px;">Send 7h ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?hot-men" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">Power Rex 🤙</p>
+            <p style="color: grey;font-size: 10px;">Send 9h ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?modern-women" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Diana Hily </p>
+            <p>5 new-messages . 1d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?modern-woman" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Violly Stanly </p>
+            <p>4 new-messages . 1d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?hot-woman" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Steffy Milo</p>
+            <p>4 new-messages . 1d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?men-profile" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Margo Billy</p>
+            <p>6 new-messages . 1d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?hot-womans" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Mariyoo</p>
+            <p>2 new-messages . 2d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?smily-girl" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Jassi Mola </p>
+            <p>Send a reel by ravenna-karela . 2d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?stylish-girls" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Massiga vila </p>
+            <p>Send a reel by koorins-karela . 2d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?stylish-men" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Ramkishion Sharma </p>
+            <p>Send a reel by Motivation-page . 2d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?profile-boy" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">Rexo Rex </p>
+            <p style="color: grey;font-size: 10px;">Send 5d ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?smile-men-profile" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;">
+            <p style="color: rgb(229, 229, 229);">James Bixo 🤘</p>
+            <p style="color: grey;font-size: 10px;">Send 5d ago</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;"></h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?men-black-outfit" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Davin paul</p>
+            <p>6 new-messages . 7d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?girl-with-specs" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Lora lisha</p>
+            <p>5 new-messages . 7d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?mens-profile" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Vishal Sharma</p>
+            <p>3 new-messages . 9d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?profile-women" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Linda Mersiya</p>
+            <p>2 new-messages . 10d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+        <div class="chat">
+
+            <div>
+            <img src="http://source.unsplash.com/1000x1000/?hot-women" alt="" style="width: 38px;border-radius: 50%;margin: 10px;">
+        </div>
+            <div style="display: flex;flex-direction: column;width:180px;font-weight:600;">
+            <p>Asain Afrifa</p>
+            <p>6 new-messages . 10d</p>
+            </div>
+
+            <div style="display: flex;height: 25px;position: relative;margin-top:5px;justify-content: space-between;width: 50px;">
+                <h1 style="color: blue;bottom: 22px;position: relative;left: 6px;">.</h1>
+                <img src="camera.png" width="20px" height="20px">
+            </div>
+            
+        </div>
+
+
+       
+
+
+
+
+    </div>
+    
+</div>
+</body>
+</html>
+
